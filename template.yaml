@@ -1,0 +1,8 @@
+display_name: Docker Build and Publish
+fields:
+  image_name:
+    type: "string"
+    required: true
+    validations:
+      - type: "docker-image"
+        helper_text: "Lowercase letters, numbers and separators only. Separator is _, __, a slash, dash or dashes"
