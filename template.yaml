@@ -4,5 +4,5 @@ fields:
     type: "string"
     required: true
     validations:
-      - type: "lowercase-alphanum"
-        helper_text: "Lowercase letters, numbers and separators only. Separator is _, __, a slash, dash or dashes"
+      - type: "docker-image"
+        helper_text: "Lowercase letters, numbers and separators only. Separators are is _,-, a slash, and dash. The name must not start with separators and adjacent separators are not allowed as well. Also,Must not contain only the numbers or numbers with the separators only"
